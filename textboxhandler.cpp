@@ -203,7 +203,8 @@ public:
 	}
 
 	virtual int handleAndReturnIfOver(int& tStep, Position tPosition) {
-		addMugenAnimation(getMugenAnimation(getGlobalAnimations(), 30000), getGlobalSprites(), makePosition(0, 0, 35));
+		int id = addMugenAnimation(getMugenAnimation(getGlobalAnimations(), 30000), getGlobalSprites(), makePosition(0, 0, 35));
+        setMugenAnimationBaseDrawScale(id, 25);
 		tStep += 5;
 		return 0;
 	}

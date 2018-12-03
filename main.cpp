@@ -13,6 +13,8 @@
 #include "adventurescreen.h"
 #include "titlescreen.h"
 
+// #define DEVELOP
+
 #ifdef DREAMCAST
 KOS_INIT_FLAGS(INIT_DEFAULT);
 
@@ -46,9 +48,9 @@ int main(int argc, char** argv) {
 
 	setGameName("Mr. Fluffer's Big Day");
 	setScreenSize(640, 480);
-	
+
+	setMainFileSystem();	
 	initPrismWrapperWithConfigFile("title/config.cfg");
-	setMainFileSystem();
 	setFont("$/rd/fonts/segoe.hdr", "$/rd/fonts/segoe.pkg");
 
 	logg("Check framerate");
@@ -56,9 +58,9 @@ int main(int argc, char** argv) {
 	if (framerateReturnType == FRAMERATE_SCREEN_RETURN_ABORT) {
 		exitGame();
 	}
-
+	addMugenFont(-1, "f6x9.fnt");
 	addMugenFont(1, "f6x9.fnt");
-	disableWrapperErrorRecovery();
+
 	setScreenAfterWrapperLogoScreen(getLogoScreenFromWrapper());
 	startScreenHandling(getTitleScreen());
 

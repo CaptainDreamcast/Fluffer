@@ -8,14 +8,19 @@
 static struct {
 
 	int mEntityID;
+int mEntityID2;
 } gData;
 
 
 static void loadStage(void* tData) {
 	(void)tData;
 
-	gData.mEntityID = addBlitzEntity(makePosition(0, 0, 1));
+	gData.mEntityID = addBlitzEntity(makePosition(0, 0, 2));
 	addBlitzMugenAnimationComponentStatic(gData.mEntityID, getGlobalSprites(), 1, 0);
+
+    gData.mEntityID2 = addBlitzEntity(makePosition(0, 0, 1));
+	addBlitzMugenAnimationComponentStatic(gData.mEntityID2, getGlobalSprites(), 1, 1);
+    setBlitzEntityScale2D(gData.mEntityID2, 50);
 }
 
 static void updateCameraMovement() {
