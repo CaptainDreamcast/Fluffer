@@ -1,0 +1,234 @@
+; 300 talked first/received camera
+; 302 talked snowflake
+; 402 get video
+; 301 received magma
+
+[Branch 0]
+dependency = var(301) = 1
+true = 5000
+false = 1
+
+[Branch 1]
+dependency = var(402) = 1
+true = 4000
+false = 2
+
+[Branch 2]
+dependency = var(302) = 1
+true = 3000
+false = 3
+
+[Branch 3]
+dependency = var(300) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "HELLOOOOOOO MY FAN, I don't think we spoke yet:"
+speaker = enemy
+type = speaking
+
+[Text 1010]
+text = "The name's Hit Zebelle, and I am a content creator slash influencer slash CEO of a one-man media company."
+speaker = enemy
+type = speaking
+
+[Text 1020]
+text = "My name is D-Dogsworth and I am something of a dog creator myself."
+speaker = player
+type = speaking
+
+[Text 1030]
+text = "You look like a technical person, you don't happen to have a GTA Magma Z I could borrow?"
+speaker = player
+type = speaking
+
+[Text 1040]
+text = "Yeah!"
+speaker = enemy
+type = speaking
+
+[Text 1050]
+text = "Wait a minute, you're not trying to summon satan and his love for high specs, are you?"
+speaker = enemy
+type = speaking
+
+[Text 1060]
+text = "Uhhhh... No?"
+speaker = player
+type = speaking
+next = 1100
+
+[Text 1070]
+text = "He keeps holding it, so you let go again."
+speaker = player
+type = speaking
+
+[Text 1080]
+text = "The two of you stand around awkwardly a while after that before resuming the conversation."
+speaker = player
+type = speaking
+next = 1100
+
+[Text 1100]
+text = "OHHHHH, are you trying to make content out of this, as well?"
+speaker = enemy
+type = speaking
+next = 1120
+
+[Text 1120]
+text = "Always happy to help a fellow creator out."
+speaker = enemy
+type = speaking
+
+[Text 1130]
+text = "Tell you what, I'll lend it to you if you can get me a video of something unique."
+speaker = enemy
+type = speaking
+
+[Text 1140]
+text = "Deal?"
+speaker = enemy
+type = speaking
+
+[Text 1150]
+text = "You receive a video camera! "
+speaker = player
+type = narration
+
+[Varset 1160]
+id = 300
+value = 1
+
+[Branch 1161]
+true = 9999
+
+[Text 2000]
+text = "I want something unique."
+speaker = enemy
+type = speaking
+
+[Text 2010]
+text = "Like a snowflake?"
+speaker = player
+type = speaking
+
+[Text 2020]
+text = "And cool."
+speaker = enemy
+type = speaking
+
+[Text 2030]
+text = "Like a snowflake?"
+speaker = player
+type = speaking
+
+[Text 2040]
+text = "I thought more of a painting."
+speaker = enemy
+type = speaking
+
+[Text 2050]
+text = "A painting of a snowflake?"
+speaker = player
+type = speaking
+
+[Text 2060]
+text = "Ahh..."
+speaker = enemy
+type = speaking
+
+[Varset 2070]
+id = 302
+value = 1
+
+[Branch 2071]
+true = 9999
+
+[Text 3000]
+text = "He wants a picture of a snowflake, I should get him one."
+speaker = player
+type = thinking
+
+[Text 3010]
+text = "NO, I DON'T WANT ONE."
+speaker = enemy
+type = speaking
+
+[Branch 3020]
+true = 9999
+
+[Text 4000]
+text = "This is perfect! That colored dog will make the perfect video."
+speaker = enemy
+type = speaking
+
+[Text 4010]
+text = "I'll have to cut the woman out, but I'll manage."
+speaker = enemy
+type = speaking
+
+[Text 4020]
+text = "Can I have my camera back?"
+speaker = enemy
+type = speaking
+next = 4015
+
+[Text 4015]
+text = "You do not give the camera back."
+speaker = player
+type = narration
+next = 4030
+
+[Text 4030]
+text = "O- ok."
+speaker = enemy
+type = speaking
+
+[Text 4040]
+text = "Can I have my magma card?"
+speaker = player
+type = speaking
+
+[Text 4050]
+text = "My cam-"
+speaker = enemy
+type = speaking
+
+[Text 4060]
+text = "THE CARD. NOW."
+speaker = player
+type = speaking
+
+[Text 4070]
+text = "You receive a GTA Magma Z!"
+speaker = player
+type = narration
+
+[Text 4080]
+text = "Please be careful, it's a 1000 pound card!"
+speaker = enemy
+type = speaking
+
+[Text 4090]
+text = "It's MY 1000 pound card."
+speaker = player
+type = speaking
+
+[VarSet 4100]
+id = 301
+value = 1
+
+[Branch 4101]
+true = 9999
+
+[Text 5000]
+text = "Hit looks longingly at the new video recorder you got from somewhere. You don't remember from where."
+speaker = player
+type = narration
+
+[Branch 5010]
+true = 9999
+
+
+[Over 9999]

@@ -1,0 +1,171 @@
+
+; 401 received drool request
+; 402 received video
+; 403 dogs are canvases
+
+[Branch 0]
+dependency = var(403) = 1
+true = 5000
+false = 1
+
+[Branch 1]
+dependency = var(402) = 1
+true = 4000
+false = 2
+
+[Branch 2]
+dependency = var(201) = 1
+true = 3000
+false = 3
+
+[Branch 3]
+dependency = (var(300) = 1) && (var(401) = 0)
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "What's with her face?"
+speaker = player
+type = thinking
+
+[Text 1010]
+text = "What's with his face?"
+speaker = enemy
+type = thinking
+
+[Branch 1020]
+true = 9999
+
+[Text 2000]
+text = "Sorry ma'am, you don't happen to have something unique?"
+speaker = player
+type = speaking
+
+[Text 2010]
+text = "I... is he flirting with me?!"
+speaker = enemy
+type = thinking
+
+[Text 2020]
+text = "All my artworks are unique, and that is why nobody is allowed to film them."
+speaker = enemy
+type = speaking
+
+[Text 2030]
+text = "But even artists can't live on love alone."
+speaker = enemy
+type = speaking
+
+[Text 2040]
+text = "My love in art is waining, if only I had the one true thing to put me back on course."
+speaker = enemy
+type = speaking
+
+[Text 2050]
+text = "If your feelings are true, find me a blue color, both clear, and bright, and sparkling like stars in the sun."
+speaker = enemy
+type = speaking
+
+[Text 2060]
+text = "MY FEELINGS ARE TRUE!"
+speaker = player
+type = speaking
+
+[Text 2070]
+text = "I WILL sacrifice Junior and/or things to Satan!"
+speaker = player
+type = thinking
+
+[Text 2080]
+text = "TWEEEET"
+speaker = "TIMMY"
+type = speaking
+
+[VarSet 2090]
+id = 401
+value = 1
+
+[Branch 2091]
+true = 9999
+
+[Text 3000]
+text = "Yes! That is the paint!"
+speaker = enemy
+type = speaking
+
+[Text 3010]
+text = "You may film my masterpiece now."
+speaker = enemy
+type = speaking
+
+[Text 3020]
+text = "???"
+speaker = player
+type = thinking
+
+[Text 3030]
+text = "You film Madame Peint's dog!"
+speaker = player
+type = narration
+
+[Text 3040]
+text = "????????"
+speaker = player
+type = thinking
+
+[Text 3050]
+text = "I finally understand what art really means."
+speaker = enemy
+type = speaking
+
+[Text 3060]
+text = "Sharing your creations with the world and having fun making them?"
+speaker = player
+type = speaking
+
+[Text 3070]
+text = "No, it's hyping them up, then selling them for exorbitant prices!"
+speaker = enemy
+type = speaking
+
+[Varset 3080]
+id = 402
+value = 1
+
+[Branch 3081]
+true = 9999
+
+
+[Text 4000]
+text = "Dogs are art."
+speaker = enemy
+type = speaking
+
+[Text 4010]
+text = "If you drew on your dog, wouldn't that make it a canvas?"
+speaker = player
+type = speaking
+next = 5000
+
+
+[Text 4020]
+text = "Dogs are canvases."
+speaker = enemy
+type = speaking
+
+[Varset 4030]
+id = 403
+value = 1
+
+[Branch 4031]
+true = 9999
+
+[Text 5000]
+text = "Dogs are canvases."
+speaker = enemy
+type = speaking
+
+[Branch 5010]
+true = 9999
+
+[Over 9999]

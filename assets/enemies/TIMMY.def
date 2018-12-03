@@ -1,0 +1,126 @@
+;var 100 nextstep
+
+
+[Branch 0]
+dependency = var(100)
+true = var(100)
+false = 10;
+
+[Text 10]
+text = "... Do you get what I mean, Junior?"
+speaker = player
+type = speaking
+
+
+[Text 20]
+text = "No, you just said "Do you get what I mean" after 10 minutes of silence!"
+speaker = enemy
+type = speaking
+
+[Text 30]
+text = "Then let me explain again!"
+speaker = player
+type = speaking
+
+[Text 40]
+text = "We, the Dogsworth family, come from a long line of dog breeders."
+speaker = player
+type = speaking
+
+[Text 50]
+text = "... But you just bought our dog four years ago."
+speaker = enemy
+type = speaking
+
+[Text 60]
+text = "HOWEVER, no matter how hard we tried, Mr. Fluffers never made it beyond second place!"
+speaker = player
+type = speaking
+
+[Text 70]
+text = "For that reason, today, we will call upon the awesome power of satan to win this dog show!"
+speaker = player
+type = speaking
+
+[Text 80]
+text = "Wh- what?"
+speaker = enemy
+type = speaking
+
+[Text 90]
+text = "Junior, in order to get anywhere in life you must be willing to make sacrifices."
+speaker = player
+type = speaking
+
+[Text 100]
+text = "Junior grabbed his emergency alarm whistle."
+speaker = enemy
+type = narration
+
+[Text 110]
+text = "I tried to search for the sacrifices needed on the dark net."
+speaker = player
+type = speaking
+
+[Text 120]
+text = "Sadly, I never figured out how to get into the dark net, so I just turned off the lights and made ominous noises while googling."
+speaker = player
+type = speaking
+
+[Text 130]
+text = "Good news first: Satan doesn't even want your firstborn son anymore!"
+speaker = player
+type = speaking
+
+[Text 140]
+text = "Junior did not let go of his emergency alarm whistle."
+speaker = enemy
+type = narration
+
+[Text 150]
+text = "He wants three things!"
+speaker = player
+type = speaking
+
+[Text 160]
+text = "A newt's eye, a maiden's earlobe and a GTA Magma Z graphics card for his computer."
+speaker = player
+type = speaking
+
+[Text 170]
+text = "... Has Satan been sucked into MMORPGs with microtransactions?"
+speaker = enemy
+type = thinking
+
+[Text 180]
+text = "I couldn't prepare those things in time, so we will have to find them here!"
+speaker = player
+type = speaking
+
+[VarSet 190]
+id = 100
+value = 1000
+
+[Branch 191]
+dependency = 1
+true = 9999
+false = 2;
+
+
+[Text 1000]
+text = "Don't worry Junior, I won't have to sacrifice you."
+speaker = player
+type = speaking
+
+[Text 1010]
+text = "TWEEEEEEEEEEEEET"
+speaker = enemy
+type = speaking
+
+[Branch 1020]
+dependency = 1
+true = 9999
+false = 2;
+
+[Over 9999]
+

@@ -1,0 +1,75 @@
+;700 talk
+
+[Branch 0]
+dependency = var(700) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "Have you come to lose again, Dogsworth?"
+speaker = enemy
+type = speaking
+
+[Text 1010]
+text = "Yes!"
+speaker = player
+type = speaking
+
+
+[Text 1020]
+text = "I mean no!"
+speaker = player
+type = speaking
+
+
+[Text 1030]
+text = "I have a plan this time!"
+speaker = player
+type = speaking
+
+[Text 1040]
+text = "Just wait, I'll make you lower that pointy nose of yours!"
+speaker = player
+type = speaking
+
+[Text 1050]
+text = "I have neck issues, that might kill me!"
+speaker = enemy
+type = speaking
+
+[Text 1060]
+text = "The more sacrifice the better, it's like with sugar in cake recipes."
+speaker = player
+type = speaking
+
+[Text 1070]
+text = "???"
+speaker = enemy
+type = thinking
+
+[Varset 1080]
+id = 700
+value = 1
+
+[Branch 1081]
+true = 9999
+
+[Text 2000]
+text = "She can't actually see you, she can't lower her head that far."
+speaker = player
+type = narration
+
+[Text 2010]
+text = "You make a grimace."
+speaker = player
+type = narration
+
+[Text 2020]
+text = "Hey!"
+speaker = enemy
+type = speaking
+
+[Branch 2030]
+true = 9999
+
+[Over 9999]

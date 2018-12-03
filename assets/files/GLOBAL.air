@@ -1,0 +1,81 @@
+
+[Begin Action 100]
+100,0, 0,0, 10
+
+[Begin Action 120]
+120,0, 0,0, 2
+100,0, 0,0, 2
+120,1, 0,0, 2
+100,0, 0,0, 2
+
+[Begin Action 200]
+200,0, 0,0, 10
+
+[Begin Action 300]
+300,0, 0,0, 10
+
+[Begin Action 301]
+500,8, 0,0, 10
+
+[Begin Action 400]
+400,0, 0,0, 10
+
+[Begin Action 500]
+500,0, 0,0, 10
+
+[Begin Action 510]
+500,1, 0,0, 10
+
+[Begin Action 520]
+500,2, 0,0, 10
+
+[Begin Action 530]
+500,3, 0,0, 10
+
+[Begin Action 540]
+500,4, 0,0, 10
+
+[Begin Action 550]
+500,7, 0,0, 10
+
+[Begin Action 560]
+500,9, 0,0, 10
+
+[Begin Action 570]
+500,10, 0,0, 10
+
+[Begin Action 580]
+500,11, 0,0, 10
+
+[Begin Action 590]
+500,12, 0,0, 10
+
+[Begin Action 600]
+500,13, 0,0, 10
+
+[Begin Action 610]
+500,5, 0,0, 10
+
+[Begin Action 620]
+500,6, 0,0, 10
+
+[Begin Action 10000]
+10000,0, 0,0, 10
+
+[Begin Action 20000]
+20000,2, 0,0, 10
+
+[Begin Action 20001]
+20000,0, 0,0, 10
+
+[Begin Action 20010]
+20000,3, 0,0, 10
+
+[Begin Action 20011]
+20000,1, 0,0, 10
+
+[Begin Action 20020]
+20000,4, 0,0, 10
+
+[Begin Action 30000]
+30000,0, 0,0, 10

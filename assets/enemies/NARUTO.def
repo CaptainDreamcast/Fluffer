@@ -1,0 +1,199 @@
+
+; 501 received ear
+; 502 received gun
+; 801 receive gun request
+
+[Branch 0]
+dependency = 0
+true = 5000
+false = 1
+
+[Branch 1]
+dependency = 0
+true = 4000
+false = 2
+
+[Branch 2]
+dependency = (var(501) = 1) && (var(801) = 1) && (var(502) = 0)
+true = 3000
+false = 3
+
+[Branch 3]
+dependency = var(501) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "OUCH! You stepped on my toes!"
+speaker = enemy
+type = speaking
+
+[Text 1010]
+text = "You may not have seen me, because I'm dressed as a ninj-"
+speaker = player
+type = enemy
+
+[Text 1020]
+text = "OUCH! You stepped on them again!"
+speaker = enemy
+type = speaking
+
+[Text 1030]
+text = "Where are my manners, my name is Narut-"
+speaker = enemy
+type = speaking
+
+[Text 1040]
+text = "WHERE IS YOUR DOG?!"
+speaker = player
+type = speaking
+
+[Text 1050]
+text = "My dog is trained in the ninja arts."
+speaker = enemy
+type = speaking
+
+[Text 1060]
+text = "It is invisible."
+speaker = enemy
+type = speaking
+
+[Text 1070]
+text = "Oh, is it a small chihuahua?"
+speaker = player
+type = speaking
+
+[Text 1080]
+text = "It's a St. Bernar- OUCH! Please stop stepping on my toes!"
+speaker = enemy
+type = speaking
+
+[Text 1090]
+text = "Lucky that I'm on painkillers after accidentally slicing off my ear with a katana!"
+speaker = enemy
+type = speaking
+
+[Text 1100]
+text = "May I have it? The ear, not the katana. I feel attached to my ears."
+speaker = player
+type = speaking
+
+[Text 1110]
+text = "Sure."
+speaker = enemy
+type = speaking
+
+[Text 1120]
+text = "You receive the-"
+speaker = player
+type = narration
+
+[Text 1130]
+text = "WAIT, it's not supposed to be this simple. Get me a bit of a cloud and you can have it."
+speaker = enemy
+type = speaking
+
+[Text 1140]
+text = "AHHHH!"
+speaker = player
+type = speaking
+
+[Text 1150]
+text = "Just kidding, here you go:"
+speaker = enemy
+type = speaking
+
+[Text 1160]
+text = "You receive the maiden's ear!"
+speaker = player
+type = narration
+
+[Text 1170]
+text = "Very rude and assuming narration text."
+speaker = enemy
+type = speaking
+
+[Text 1180]
+text = "Narration text, you have changed my life and ended my character arc."
+speaker = enemy
+type = speaking
+
+[Text 1190]
+text = "I will now live with pride."
+speaker = enemy
+type = speaking
+
+[Text 1200]
+text = "Okay, cool."
+speaker = player
+type = narration
+
+[Varset 1210]
+id = 501
+value = 1
+
+[Branch 1211]
+true = 9999
+
+[Text 2000]
+text = "If I need another ear, I'll come to you."
+speaker = player
+type = speaking
+
+[Text 2010]
+text = "Narut- grabs his emergency alarm whistle."
+speaker = player
+type = narration
+
+[Branch 2020]
+true = 9999
+
+[Text 3000]
+text = "I also wish to master the ninja way!"
+speaker = player
+type = speaking
+
+[Text 3010]
+text = "I want to become a gun ninja!"
+speaker = player
+type = speaking
+
+[Text 3020]
+text = "There are no gun ninj-"
+speaker = enemy
+type = speaking
+
+[Text 3030]
+text = "Give me a gun, NOW!"
+speaker = player
+type = speaking
+
+[Text 3040]
+text = "Okay, but please don't step on my toes!"
+speaker = enemy
+type = speaking
+
+[Text 3050]
+text = "You receive a gun! In every other genre the norm, in this game kinda worrying! Try not to use it!"
+speaker = player
+type = narration
+
+[Text 3060]
+text = "And i need a mask! Make it quick, I've got a gun!"
+speaker = player
+type = speaking
+
+[Text 3070]
+text = "You receive Narut-'s replacement mask! It smells like invisible dog!"
+speaker = player
+type = narration
+
+[Varset 3080]
+id = 502
+value = 1
+
+[Branch 3081]
+true = 9999
+
+
+[Over 9999]   

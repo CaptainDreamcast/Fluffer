@@ -1,0 +1,51 @@
+;650 talk
+
+[Branch 0]
+dependency = var(650) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "I am a cat."
+speaker = enemy
+type = speaking
+
+[Text 1010]
+text = "I thought you were a dog?"
+speaker = player
+type = speaking
+
+
+[Text 1020]
+text = "I am a dog."
+speaker = enemy
+type = speaking
+
+
+[Text 1030]
+text = "Wait, did you just talk?"
+speaker = player
+type = speaking
+
+
+[Text 1040]
+text = "Woof woof."
+speaker = enemy
+type = speaking
+
+[Varset 1050]
+id = 650
+value = 1
+
+[Branch 1051]
+true = 9999
+
+[Text 2000]
+text = "Woof woof."
+speaker = enemy
+type = speaking
+
+[Branch 2010]
+true = 9999
+
+[Over 9999]

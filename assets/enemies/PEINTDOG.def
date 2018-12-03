@@ -1,0 +1,38 @@
+;450 talk
+
+[Branch 0]
+dependency = var(450) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "The dog is colored in multiple bright colors."
+speaker = player
+type = narration
+
+[Text 1010]
+text = "On closer inspection, it appears to be watercolor."
+speaker = player
+type = narration
+
+[Text 1020]
+text = "Author's note: Do not draw on real dogs with watercolors."
+speaker = player
+type = narration
+
+[Varset 1030]
+id = 450
+value = 1
+
+[Branch 1031]
+true = 9999
+
+[Text 2000]
+text = "Author's note: Drawing on dogs is neither fun, nor does it look good."
+speaker = player
+type = narration
+
+[Branch 2010]
+true = 9999
+
+[Over 9999]

@@ -1,0 +1,75 @@
+;var 200 nextstep
+; var 
+
+; collect drool
+[Branch 0]
+dependency = var(401) = 1
+true = 2000
+false = 1
+
+[Branch 1]
+dependency = var(200)
+true = var(200)
+false = 100
+
+
+[Text 100]
+text = "Mr. Fluffers is wagging his tail happily."
+speaker = player
+type = narration
+
+[Text 110]
+text = "Mr. Fluffers is also drooling happily."
+speaker = player
+type = narration
+
+[Text 120]
+text = "You nearly slipped on his drool... happily."
+speaker = player
+type = narration
+
+[Varset 130]
+id = 200
+value = 1000
+
+[Branch 131]
+dependency = 1
+true = 9999
+false = 2
+
+[Text 1000]
+text = "2nd place to the world, 1st place to us."
+speaker = player
+type = narration
+
+[Branch 1010]
+dependency = 1
+true = 9999
+false = 2
+
+[Text 2000]
+text = "Mr. Fluffer's drool sparkles like a star in the sun."
+speaker = player
+type = narration
+
+[Text 2010]
+text = "Technically stars are suns, but you feel there are some things that shouldn't be questioned."
+speaker = player
+type = narration
+
+[Text 2020]
+text = "You get the blue paint(?)!"
+speaker = player
+type = narration
+
+[Varset 2030]
+id = 201
+value = 1
+
+[Branch 2031]
+dependency = 1
+true = 9999
+false = 2
+
+[Over 9999]
+

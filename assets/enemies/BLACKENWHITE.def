@@ -1,0 +1,343 @@
+; 801 gun request
+;802 money received
+
+;810 numbers
+;811-815 book1-book5
+
+
+[Branch 0]
+dependency = var(802) = 1
+true = 10000
+false = 1;
+
+[Branch 1]
+dependency = var(502) = 1
+true = 9000
+false = 2;
+
+[Branch 2]
+dependency = (var(801) = 0) && (var(601) = 1)
+true = 8000
+false = 3;
+
+[Branch 3]
+dependency = var(815) = 1
+true = 7000
+false = 4;
+
+[Branch 4]
+dependency = var(814) = 1
+true = 6000
+false = 5;
+
+[Branch 5]
+dependency = var(813) = 1
+true = 5000
+false = 6;
+
+[Branch 6]
+dependency = var(812) = 1
+true = 4000
+false = 7;
+
+[Branch 7]
+dependency = var(811) = 1
+true = 3000
+false = 8;
+
+[Branch 8]
+dependency = var(810) = 1
+true = 2000
+false = 1000;
+
+[Text 1000]
+text = "I hate grey areas. Thing should or shouldn't be."
+speaker = enemy
+type = speaking
+
+[Text 1010]
+text = "Just take numbers. 1, 2, 3... perfection."
+speaker = enemy
+type = speaking
+
+[Text 1020]
+text = "1.4, 2.5, 4.1... what are those? Do they think they're better?"
+speaker = enemy
+type = speaking
+
+[Text 1030]
+text = "I just want to see your book, honestly."
+speaker = player
+type = speaking
+
+[Varset 1040]
+id = 810
+value = 1
+
+[Branch 1041]
+true = 9999
+
+
+[Text 2000]
+text = "May I see your book?"
+speaker = player
+type = speaking
+
+[Text 2010]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Varset 2020]
+id = 811
+value = 1
+
+[Branch 2021]
+true = 9999
+
+[Text 3000]
+text = "Please?"
+speaker = player
+type = speaking
+
+[Text 3010]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Varset 3020]
+id = 812
+value = 1
+
+[Branch 3021]
+true = 9999
+
+
+[Text 4000]
+text = "The back of the show is burning, go look while I take care of your book!"
+speaker = player
+type = speaking
+
+[Text 4010]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Varset 4020]
+id = 813
+value = 1
+
+[Branch 4021]
+true = 9999
+
+
+[Text 5000]
+text = "Sir, I have a terminal illness. My last wish is to look into your book."
+speaker = player
+type = speaking
+
+[Text 5010]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Varset 5020]
+id = 814
+value = 1
+
+[Branch 5021]
+true = 9999
+
+
+[Text 6000]
+text = "You dance the dance of your people in attempting to get judge Blackenwhite to let you look into your book."
+speaker = player
+type = speaking
+
+[Text 6010]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Varset 6020]
+id = 815
+value = 1
+
+[Branch 6021]
+true = 9999
+
+
+[Text 7000]
+text = "No."
+speaker = enemy
+type = speaking
+
+[Branch 7010]
+true = 9999
+
+
+[Text 8000]
+text = "Sir, you are looking at the prize money of 3000 pounds rather intently."
+speaker = enemy
+type = speaking
+
+[Text 8010]
+text = "Am I correct in the assumption that you wish to steal it?"
+speaker = enemy
+type = speaking
+
+[Text 8020]
+text = "I'd like to, but I don't know how."
+speaker = player
+type = speaking
+
+[Text 8030]
+text = "Well, sir, the easiest way to steal money is with a gun."
+speaker = enemy
+type = speaking
+
+[Text 8040]
+text = "Additionally, you should wear a mask so I don't know who you are."
+speaker = enemy
+type = speaking
+
+[Text 8050]
+text = "And if I do all that, I can rob you successfully?"
+speaker = player
+type = speaking
+
+[Text 8060]
+text = "100% assured, sir."
+speaker = enemy
+type = speaking
+
+[Text 8070]
+text = "Give me a few minutes, I will be right back!"
+speaker = player
+type = speaking
+
+[Text 8080]
+text = "Best of luck, sir!"
+speaker = enemy
+type = speaking
+
+[Varset 8090]
+id = 801
+value = 1
+
+[Branch 8091]
+true = 9999
+
+[Text 9000]
+text = "Welcome back sir!"
+speaker = enemy
+type = speaking
+
+[Text 9010]
+text = "I have a mask and a gun! Give me the prize money."
+speaker = player
+type = speaking
+
+[Text 9020]
+text = "Sir, you have made a small mistake. "
+speaker = enemy
+type = speaking
+
+[Text 9030]
+text = "You are supposed to bring the gun and the mask to the robbery."
+speaker = enemy
+type = speaking
+
+[Text 9040]
+text = "Oh no!"
+speaker = player
+type = speaking
+
+[Text 9050]
+text = "We all make mistakes, and I know how it feels. I will play along."
+speaker = enemy
+type = speaking
+
+[Text 9060]
+text = "... But out of curiosity, where did you leave the gun?"
+speaker = enemy
+type = speaking
+
+[Text 9070]
+text = "I left it with my son."
+speaker = player
+type = speaking
+
+[Text 9080]
+text = "Will this be alright?"
+speaker = enemy
+type = speaking
+
+[Text 9090]
+text = "BANG"
+speaker = player
+type = narration
+
+[Text 9100]
+text = "Ah, my foot!"
+speaker = "TIMMY"
+type = speaking
+
+[Text 9110]
+text = "He'll be alright"
+speaker = player
+type = speaking
+
+[Text 9120]
+text = "BANG"
+speaker = player
+type = narration
+
+[Text 9130]
+text = "Ah, my other foot!"
+speaker = "TIMMY"
+type = speaking
+
+[Text 9140]
+text = "Oh well."
+speaker = player
+type = speaking
+
+[Text 9150]
+text = "I'll be taking the money then."
+speaker = player
+type = speaking
+
+[Text 9160]
+text = "You receive 3000 pounds in cash!"
+speaker = player
+type = narration
+
+[Text 9170]
+text = "Thanks Blackenwhite, you're a pretty understanding guy!"
+speaker = player
+type = speaking
+
+[Text 9180]
+text = "I was middle-aged once too, you know."
+speaker = enemy
+type = speaking
+
+[Varset 9190]
+id = 802
+value = 1
+
+[Branch 9191]
+true = 9999
+
+[Text 10000]
+text = "Blackenwhite is lost deep in happy memories of his own mid-life crisis."
+speaker = player
+type = narration
+
+[Branch 10010]
+true = 9999
+
+
+[Over 9999]
+

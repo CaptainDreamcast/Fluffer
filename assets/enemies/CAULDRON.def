@@ -1,0 +1,275 @@
+;900 talk
+
+[Branch 0]
+dependency = (var(602) = 1) && (var(501) = 1) && (var(301) = 1)
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "The cauldron looks sad and empty without sacrifices."
+speaker = player
+type = narration
+
+[Branch 1010]
+true = 9999
+
+
+[Text 2000]
+text = "You put the three sacrifices in the black cauldron!"
+speaker = player
+type = narration
+
+[Text 2010]
+text = "You sacrifice them by lighting them on fire or something, the wikihow guide was unclear on that part!"
+speaker = player
+type = narration
+
+[Text 2020]
+text = "[Rumbling]"
+speaker = player
+type = narration
+next = 2025
+
+[ChangeAnim 2025]
+enemy = "CAULDRON"
+anim = 610
+next = 2030
+newname = "SANTA"
+
+[Text 2030]
+text = "WHO SUMMONS SANTA?!"
+speaker = enemy
+type = speaking
+
+[Text 2040]
+text = "No, I don't want you santa, I want the other red guy!"
+speaker = player
+type = speaking
+
+[Text 2050]
+text = "Sorry, I work part-time, the economy is tough."
+speaker = enemy
+type = speaking
+next = 2055
+
+[ChangeAnim 2055]
+enemy = "CAULDRON"
+anim = 620
+next = 2060
+newname = "SATAN"
+
+[Text 2060]
+text = "WHO SUMMONS SATAN?!"
+speaker = enemy
+type = speaking
+
+[Text 2070]
+text = "You rub Satan's cauldron."
+speaker = player
+type = narration
+
+[Text 2080]
+text = "Wh- what are you doing?"
+speaker = enemy
+type = speaking
+
+[Text 2090]
+text = "I rubbed your Cauldron, now I have three wishes."
+speaker = player
+type = speaking
+
+[Text 2100]
+text = "????"
+speaker = enemy
+type = thinking
+
+[Text 2110]
+text = "My first wish, I want Mr. Fluffers to become a dog that will win the dog show."
+speaker = player
+type = speaking
+
+[Text 2120]
+text = "Your wish is my command!"
+speaker = enemy
+type = speaking
+next = 2125
+
+[ChangeAnim 2125]
+enemy = "FLUFFER"
+anim = 301
+next = 2130
+newname = "FLUFFER2"
+
+[Text 2130]
+text = "Dad, our dog has two heads now!"
+speaker = "TIMMY"
+type = speaking
+
+[Text 2140]
+text = "If you think about it twice the heads means twice as good."
+speaker = enemy
+type = speaking
+
+[Text 2150]
+text = "Can't argue with logic! Thanks Satan!"
+speaker = player
+type = speaking
+
+[Text 2160]
+text = "-chever way I look at it, this is a cat."
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2170]
+text = "No way, I'm a dog! Are you blind?"
+speaker = "CAT"
+type = speaking
+
+[Text 2180]
+text = "But you are still a cat. Five out of ten dog points."
+speaker = "BLACKENWHITE"
+type = speaking
+next = 2185
+
+[SetEnemyPos 2185]
+enemy = "BLACKENWHITE"
+pos = 1030, 994
+next = 2190
+
+[Text 2190]
+text = "The final participant for the day... let's see..."
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2200]
+text = "..."
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2210]
+text = "I'm so excited."
+speaker = enemy
+type = thinking
+
+[Text 2220]
+text = "Me too Satan, me too."
+speaker = player
+type = thinking
+
+[Text 2230]
+text = "..."
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2240]
+text = "I see."
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2250]
+text = "Twice the heads means twice as good!"
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2260]
+text = "First place!"
+speaker = "BLACKENWHITE"
+type = speaking
+
+[Text 2270]
+text = "We did it Satan!"
+speaker = player
+type = speaking
+
+[Text 2280]
+text = "We did it Junior!"
+speaker = player
+type = speaking
+
+[Text 2290]
+text = "Dad..."
+speaker = "TIMMY"
+type = speaking
+
+[Text 2300]
+text = "Junior, I've learned my lesson."
+speaker = player
+type = speaking
+
+[Text 2310]
+text = "It was never about winning."
+speaker = player
+type = speaking
+
+[Text 2320]
+text = "The fun we've had today is worth more than any trophy."
+speaker = player
+type = speaking
+
+[Text 2330]
+text = "???"
+speaker = "TIMMY"
+type = speaking
+
+[Text 2340]
+text = "He's trying to tack on a moral, just let it play out"
+speaker = enemy
+type = speaking
+
+[Text 2350]
+text = "No matter the results, time that's enjoyed is never time... sacrificed."
+speaker = player
+type = speaking
+
+[Text 2360]
+text = "Speaking of sacrifice, I'll book it back to hell to game with my sweet new graphics card."
+speaker = enemy
+type = speaking
+
+[Text 2370]
+text = "See ya around Satan!"
+speaker = player
+type = speaking
+
+[Text 2380]
+text = "And I'll take that first-born with me, he can play healer."
+speaker = enemy
+type = speaking
+
+[Text 2390]
+text = "Daaaaaaaaad!"
+speaker = "TIMMY"
+type = speaking
+
+[Text 2400]
+text = "Oopsie-"
+speaker = player
+type = speaking
+
+[Text 2410]
+text = "Ah well, you know how it is."
+speaker = player
+type = speaking
+next = 2415
+
+[Blackout 2415]
+
+[Text 2420]
+text = "Sacrifices must be made!"
+speaker = player
+type = speaking
+
+[Text 2430]
+text = "The end!"
+speaker = player
+type = narration
+
+[Text 2440]
+text = "Thanks for playing!"
+speaker = player
+type = narration
+
+[GameOver 2450]
+true = 9999
+
+[Over 9999]

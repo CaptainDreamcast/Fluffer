@@ -1,0 +1,3 @@
+OBJS = main.o \
+adventurescreen.o collision.o congratsscreen.o enemyhandler.o files.o globalvar.o helplist.o \
+itemmenu.o player.o stage.o textboxhandler.o titlescreen.o

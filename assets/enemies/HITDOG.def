@@ -1,0 +1,38 @@
+;350 talk
+
+[Branch 0]
+dependency = var(350) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "There are multiple cameras attached to the small Schnauzer."
+speaker = player
+type = narration
+
+[Text 1010]
+text = "It tries to lick its butt, but one of the cameras is blocking the way."
+speaker = player
+type = narration
+
+[Text 1020]
+text = "This Schnauzer no longer appreciates the influencer livestyle."
+speaker = player
+type = narration
+
+[Varset 1030]
+id = 350
+value = 1
+
+[Branch 1031]
+true = 9999
+
+[Text 2000]
+text = "The Schnauzer looks at you with the light in his eyes of someone planning a prison and/or camera break."
+speaker = player
+type = narration
+
+[Branch 2010]
+true = 9999
+
+[Over 9999]

@@ -1,0 +1,193 @@
+; 601 receive money request
+; 602 get Newt Eye
+; 603 Got Secret
+
+[Branch 0]
+dependency = var(603) = 1
+true = 5000
+false = 1
+
+[Branch 1]
+dependency = var(602) = 1
+true = 4000
+false = 2
+
+[Branch 2]
+dependency = var(802) = 1
+true = 3000
+false = 3
+
+[Branch 3]
+dependency = var(601) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "You look like a witch!"
+speaker = player
+type = speaking
+
+[Text 1010]
+text = "I am not a witch!"
+speaker = enemy
+type = speaking
+
+[Text 1020]
+text = "Can't you see my schoolgirl outfit? I'm a normal school girl!"
+speaker = enemy
+type = speaking
+
+[Text 1030]
+text = "Yeah! Leave Notta in peace!"
+speaker = "CAT"
+type = speaking
+
+[Text 1040]
+text = "There you go, would a witch have her dog defending her?"
+speaker = enemy
+type = speaking
+
+[Text 1050]
+text = "..."
+speaker = player
+type = speaking
+
+[Text 1060]
+text = "Since you are a normal school girl, surely you have a newt's eye with you."
+speaker = player
+type = speaking
+
+[Text 1070]
+text = "Every school girl has them."
+speaker = player
+type = speaking
+
+[Text 1080]
+text = "Is that true?"
+speaker = enemy
+type = thinking
+
+[Text 1090]
+text = "I- I don't know!"
+speaker = "CAT"
+type = thinking
+
+[Text 1100]
+text = "Y-y-y-yeah, I have one. You can buy it off me. For 3000 pounds."
+speaker = enemy
+type = speaking
+
+[Text 1110]
+text = "How am I supposed to get 3000 pounds?"
+speaker = player
+type = speaking
+
+[Text 1120]
+text = "I don't know, rob something? That's what middle-aged men do, I think?"
+speaker = enemy
+type = speaking
+
+[Varset 1130]
+id = 601
+value = 1
+
+[Branch 1131]
+true = 9999
+
+[Text 2000]
+text = "Diamonds are a girl's best friends, I read that in a manga."
+speaker = enemy
+type = speaking
+
+[Text 2010]
+text = "I wish I had friends to read manga with."
+speaker = enemy
+type = speaking
+
+[Branch 2020]
+true = 9999
+
+[Text 3000]
+text = "You got the money!"
+speaker = enemy
+type = speaking
+
+[Text 3010]
+text = "Now I can go to karaoke with all the other girls!"
+speaker = enemy
+type = speaking
+
+[Text 3020]
+text = "Thank you so much!"
+speaker = enemy
+type = speaking
+
+[Text 3030]
+text = "Here, you can have the newt's eye. It's only good for summoning Satan anyway."
+speaker = enemy
+type = speaking
+
+[Text 3040]
+text = "And he sucks at Karaoke."
+speaker = enemy
+type = speaking
+
+[Text 3050]
+text = "You cross "Fun at Karaoke" off your things to do with Satan list."
+speaker = player
+type = narration
+
+[Text 3060]
+text = "YOU ALSO CROSS "GET THE NEWT'S EYE" OFF YOUR LIST, HELL YEAH!"
+speaker = player
+type = narration
+
+[Varset 3070]
+id = 602
+value = 1
+
+[Branch 3071]
+true = 9999
+
+[Text 4000]
+text = "I'll share a secret with you:"
+speaker = enemy
+type = speaking
+
+[Text 4010]
+text = "You're a witch! It's obvious that you're a witch!"
+speaker = player
+type = thinking
+
+[Text 4020]
+text = "I am actually very small, I'm wearing high heels."
+speaker = enemy
+type = speaking
+
+[Text 4030]
+text = "A WITCH! A HIGH-HEELED WITCH!"
+speaker = player
+type = thinking
+
+[Varset 4040]
+id = 603
+value = 1
+
+[Branch 4041]
+true = 9999
+
+[Text 5000]
+text = "Don't tell anybody about my secret!"
+speaker = enemy
+type = speaking
+
+[Text 5010]
+text = "You gnash your teeth."
+speaker = player
+type = narration
+
+[Branch 5020]
+true = 9999
+
+
+[Over 9999]   

@@ -1,0 +1,47 @@
+;550 talk
+;501 received ear
+
+[Branch 0]
+dependency = var(550) = 1
+true = 3000
+false = 1
+
+[Branch 1]
+dependency = var(501) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "If there was an invisible dog, it would be here."
+speaker = player
+type = narration
+
+[Branch 1010]
+true = 9999
+
+[Text 2000]
+text = "You pet the invisible dog while giving a thumbs up to its owner."
+speaker = player
+type = narration
+
+[Text 2010]
+text = "He appreciates it, but also informs you that the dog is 50 centimeters to the right."
+speaker = player
+type = narration
+
+[Varset 2020]
+id = 550
+value = 1
+
+[Branch 2021]
+true = 9999
+
+[Text 3000]
+text = "You have given up on petting the invisible dog for now, but the fire still burns inside you."
+speaker = player
+type = narration
+
+[Branch 3010]
+true = 9999
+
+[Over 9999]

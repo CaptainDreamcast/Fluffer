@@ -1,0 +1,39 @@
+;750 talk
+
+[Branch 0]
+dependency = var(750) = 1
+true = 2000
+false = 1000
+
+[Text 1000]
+text = "The poodle gives off an air of undeserved superiority."
+speaker = player
+type = narration
+
+[Text 1010]
+text = "You try to match its smugness, and spend ten minutes silently trying to outsmug it."
+speaker = player
+type = narration
+
+
+[Text 1020]
+text = "It was a battle without winners."
+speaker = player
+type = narration
+
+[Varset 1030]
+id = 750
+value = 1
+
+[Branch 1031]
+true = 9999
+
+[Text 2000]
+text = "The poodle recognizes you as its equal in smugness."
+speaker = player
+type = narration
+
+[Branch 2010]
+true = 9999
+
+[Over 9999]
